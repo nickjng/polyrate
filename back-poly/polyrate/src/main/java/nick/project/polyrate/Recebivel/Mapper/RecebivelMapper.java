@@ -8,7 +8,6 @@ import org.mapstruct.Mapping;
 @Mapper(componentModel = "spring")
 public interface RecebivelMapper {
 
-    @Mapping(source = "id", target = "idRecebivel")
     @Mapping(source = "cedente.nome", target = "nomeCedente")
     @Mapping(source = "tipoRecebivel.nome", target = "nomeTipoRecebivel")
     @Mapping(source = "moedaTitulo.codigo", target = "codigoMoedaTitulo")

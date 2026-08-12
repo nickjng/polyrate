@@ -9,7 +9,6 @@ import org.mapstruct.Mapping;
 @Mapper(componentModel = "spring")
 public interface TipoRecebivelMapper {
 
-    @Mapping(source = "id", target = "idTipoRecebivel")
     @Mapping(source = "nome", target = "nomeTipoRecebivel")
     TipoRecebivelDTO toResponse(TipoRecebivelEntity entity);
 

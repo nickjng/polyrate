@@ -33,8 +33,8 @@ public class TaxaCambioController {
 
     @GetMapping("/vigente")
     public ResponseEntity<TaxaCambioDTO> buscarTaxaVigente(
-            @RequestParam BigInteger moedaOrigemId,
-            @RequestParam BigInteger moedaDestinoId) {
+            @RequestParam Integer moedaOrigemId,
+            @RequestParam Integer moedaDestinoId) {
         return ResponseEntity.status(200).body(taxaCambioService.buscarTaxaVigente(moedaOrigemId, moedaDestinoId));
     }
 }

@@ -7,8 +7,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.math.BigInteger;
 import java.util.List;
 
-public interface RecebivelRepository extends JpaRepository<RecebivelEntity, BigInteger> {
+public interface RecebivelRepository extends JpaRepository<RecebivelEntity, Integer> {
 
     List<RecebivelEntity> findByStatus(StatusRecebivel status);
-    List<RecebivelEntity> findByCedente_Id(BigInteger cedenteId);
+    List<RecebivelEntity> findByCedente_IdCedente(Integer cedenteId);
 }

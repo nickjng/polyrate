@@ -1,10 +1,13 @@
 package nick.project.polyrate.Cedente.Controller;
 
+import nick.project.polyrate.Cedente.Objects.dao.CedenteDAO;
+import nick.project.polyrate.Cedente.Objects.dto.CedenteDTO;
+import nick.project.polyrate.Cedente.Service.CedenteServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/cedente")

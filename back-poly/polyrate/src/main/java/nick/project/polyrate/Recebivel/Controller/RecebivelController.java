@@ -27,7 +27,7 @@ public class RecebivelController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<RecebivelDTO> buscarPorId(@PathVariable BigInteger id) {
+    public ResponseEntity<RecebivelDTO> buscarPorId(@PathVariable Integer id) {
         return ResponseEntity.status(200).body(recebivelService.buscarPorId(id));
     }
 

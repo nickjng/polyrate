@@ -30,8 +30,9 @@ public class TransacaoServiceImpl implements TransacaoService {
     }
 
     @Override
-    public TransacaoDTO buscarPorId(BigInteger id) {
-        return transacaoRepository.findById(id)
+    public TransacaoDTO buscarPorId(Integer id) {
+        return transacaoRepository.findById(
+                id)
                 .map(transacaoMapper::toResponse)
                 .orElseThrow(() -> new RuntimeException("Transação não encontrada"));
     }

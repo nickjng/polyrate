@@ -27,7 +27,7 @@ public class TransacaoController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<TransacaoDTO> buscarPorId(@PathVariable BigInteger id) {
+    public ResponseEntity<TransacaoDTO> buscarPorId(@PathVariable Integer id) {
         return ResponseEntity.status(200).body(transacaoService.buscarPorId(id));
     }
 }

@@ -9,7 +9,7 @@ import java.util.List;
 public interface RecebivelService {
 
     List<RecebivelDTO> listarRecebiveis();
-    RecebivelDTO buscarPorId(BigInteger id);
+    RecebivelDTO buscarPorId(Integer id);
     RecebivelDTO cadastrarRecebivel(RecebivelDAO recebivelBody);
 
     // Propositalmente NÃO tem simular()/liquidar() aqui ainda.

@@ -53,7 +53,7 @@ public class RecebivelServiceImpl implements RecebivelService {
     }
 
     @Override
-    public RecebivelDTO buscarPorId(BigInteger id) {
+    public RecebivelDTO buscarPorId(Integer id) {
         return recebivelRepository.findById(id)
                 .map(recebivelMapper::toResponse)
                 .orElseThrow(() -> new RuntimeException("Recebível não encontrado"));

@@ -8,7 +8,6 @@ import org.mapstruct.Mapping;
 @Mapper(componentModel = "spring")
 public interface TaxaCambioMapper {
 
-    @Mapping(source = "id", target = "idTaxaCambio")
     @Mapping(source = "moedaOrigem.codigo", target = "codigoMoedaOrigem")
     @Mapping(source = "moedaDestino.codigo", target = "codigoMoedaDestino")
     TaxaCambioDTO toResponse(TaxaCambioEntity entity);

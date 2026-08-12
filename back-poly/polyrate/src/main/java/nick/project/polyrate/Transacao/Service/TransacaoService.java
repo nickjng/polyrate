@@ -9,6 +9,6 @@ import java.math.BigInteger;
 public interface TransacaoService {
 
     Page<TransacaoDTO> listarExtrato(Pageable pageable);
-    TransacaoDTO buscarPorId(BigInteger id);
+    TransacaoDTO buscarPorId(Integer id);
 
 }

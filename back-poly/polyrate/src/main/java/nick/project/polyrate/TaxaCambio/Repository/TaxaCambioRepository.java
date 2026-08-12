@@ -6,9 +6,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.math.BigInteger;
 import java.util.Optional;
 
-public interface TaxaCambioRepository extends JpaRepository<TaxaCambioEntity, BigInteger> {
+public interface TaxaCambioRepository extends JpaRepository<TaxaCambioEntity, Integer> {
 
-    Optional<TaxaCambioEntity> findTopByMoedaOrigem_IdAndMoedaDestino_IdOrderByDataReferenciaDesc(
-            BigInteger moedaOrigemId, BigInteger moedaDestinoId
+    Optional<TaxaCambioEntity> findTopByMoedaOrigem_IdMoedaAndMoedaDestino_IdMoedaOrderByDataReferenciaDesc(
+            Integer moedaOrigemId, Integer moedaDestinoId
     );
 }

@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.math.BigInteger;
 import java.util.Optional;
 
-public interface TipoRecebivelRepository extends JpaRepository<TipoRecebivelEntity, BigInteger> {
+public interface TipoRecebivelRepository extends JpaRepository<TipoRecebivelEntity, Integer> {
 
     Optional<TipoRecebivelEntity> findByCodigoEstrategia(CodigoEstrategia codigoEstrategia);
 }

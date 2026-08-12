@@ -10,5 +10,5 @@ public interface TaxaCambioService {
 
     List<TaxaCambioDTO> listarTaxas();
     TaxaCambioDTO cadastrarTaxa(TaxaCambioDAO taxaCambioBody);
-    TaxaCambioDTO buscarTaxaVigente(BigInteger moedaOrigemId, BigInteger moedaDestinoId);
+    TaxaCambioDTO buscarTaxaVigente(Integer moedaOrigemId, Integer moedaDestinoId);
 }

@@ -9,7 +9,6 @@ import org.mapstruct.Mapping;
 @Mapper(componentModel = "spring")
 public interface CedenteMapper {
 
-    @Mapping(source = "id", target = "idCedente")
     @Mapping(source = "nome", target = "nomeCedente")
     @Mapping(source = "documento", target = "documentoCedente")
     CedenteDTO toResponse(CedenteEntity cedenteEntity);

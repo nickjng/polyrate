@@ -58,9 +58,9 @@ public class TaxaCambioServiceImpl implements TaxaCambioService {
     }
 
     @Override
-    public TaxaCambioDTO buscarTaxaVigente(BigInteger moedaOrigemId, BigInteger moedaDestinoId) {
+    public TaxaCambioDTO buscarTaxaVigente(Integer moedaOrigemId, Integer moedaDestinoId) {
         return taxaCambioRepository
-                .findTopByMoedaOrigem_IdAndMoedaDestino_IdOrderByDataReferenciaDesc(moedaOrigemId, moedaDestinoId)
+                .findTopByMoedaOrigem_IdMoedaAndMoedaDestino_IdMoedaOrderByDataReferenciaDesc(moedaOrigemId, moedaDestinoId)
                 .map(taxaCambioMapper::toResponse)
                 .orElseThrow(() -> new RuntimeException("Taxa de câmbio não cadastrada para esse par"));
     }
