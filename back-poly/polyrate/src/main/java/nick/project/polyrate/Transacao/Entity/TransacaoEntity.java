@@ -18,11 +18,11 @@ public class TransacaoEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private BigInteger id;
+    @Column(name = "id_transacao")
+    private Integer idTransacao;
 
     @ManyToOne
-    @JoinColumn(name = "recebivel_id", nullable = false)
+    @JoinColumn(name = "id_recebivel", nullable = false)
     private RecebivelEntity recebivel;
 
     @Column(name = "taxa_base_aplicada", precision = 9, scale = 6, nullable = false)

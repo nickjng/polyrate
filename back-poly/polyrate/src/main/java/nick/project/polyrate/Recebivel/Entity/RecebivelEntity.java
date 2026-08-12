@@ -20,8 +20,8 @@ public class RecebivelEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private BigInteger id;
+    @Column(name = "id_recebivel")
+    private Integer idRecebivel;
 
     @ManyToOne
     @JoinColumn(name = "cedente_id", nullable = false)

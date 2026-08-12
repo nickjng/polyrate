@@ -15,8 +15,8 @@ public class TipoRecebivelEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private BigInteger id;
+    @Column(name = "id_tipo_recebivel")
+    private Integer idTipoRecebivel;
 
     @Column(name = "nome", length = 100, nullable = false)
     private String nome;
