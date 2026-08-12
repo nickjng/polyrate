@@ -15,7 +15,7 @@ public class MoedaEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_moeda")
-    private BigInteger idMoeda;
+    private Integer idMoeda;
 
     @Column
     private String codigo;

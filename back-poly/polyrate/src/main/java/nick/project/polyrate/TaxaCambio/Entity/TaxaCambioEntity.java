@@ -18,8 +18,8 @@ public class TaxaCambioEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private BigInteger id;
+    @Column(name = "id_taxa_cambio")
+    private Integer idTaxaCambio;
 
     @ManyToOne
     @JoinColumn(name = "moeda_origem_id", nullable = false)

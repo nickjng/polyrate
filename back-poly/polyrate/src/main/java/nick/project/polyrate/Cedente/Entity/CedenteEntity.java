@@ -14,8 +14,8 @@ public class CedenteEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private BigInteger id;
+    @Column(name = "id_cedente")
+    private Integer idCedente;
 
     @Column(name = "nome", length = 150, nullable = false)
     private String nome;
